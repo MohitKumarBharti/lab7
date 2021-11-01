@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector</title>
+    <style>
+      h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-style: normal;
+        color: rgb(78, 36, 36);
+        background-color: azure;
+      }
+
+      h2 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-style: normal;
+        color: rgb(243, 255, 139);
+        background-color: rgb(192, 238, 238);
+      }
+      p {
+        font-size: 25px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-style: normal;
+        color: rgb(106, 59, 216);
+        background-color: rgb(225, 231, 211);
+      }
+      li {
+        font-size: 25px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-style: normal;
+        color: rgb(106, 59, 216);
+        background-color: rgb(225, 231, 211);
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      // program to print a text
+      let a = "hello";
+
+      function fun1() {
+        console.log(a);
+      }
+
+      fun1();
+
+      let v = "hello";
+
+      function fun2() {
+        v = 3;
+      }
+
+      console.log(v);
+
+      fun2();
+      console.log(v); // 3
+
+      // program showing block-scoped concept
+      // global variable
+      let m = "Hello";
+
+      function fun3() {
+        // local variable
+        let b = "people";
+
+        console.log(m + " " + b);
+
+        if (b == "World") {
+          // block-scoped variable
+          let c = "again";
+
+          console.log(m + " " + b + " " + c);
+        }
+
+        // variable c can't be used outside the block
+        console.log(m + " " + b + " " + c);
+      }
+
+      fun3();
+
+      // program showing local scope of a variable
+      let d = "hello";
+
+      function fun4() {
+        let t = "World";
+        console.log(d + " " + t);
+      }
+
+      fun4();
+      console.log(d + t); // t cannot be accessed
+    </script>
+
+    <div>
+      <div>
+        <h1>QUESTION 2</h1>
+        <h1>Show the Scope of variables in JS using HTML page.</h1>
+      </div>
+
+      <ul>
+        <li>
+          let a = "hello";<br />
+          function fun1() { console.log(a); }<br />
+          fun1();<br />
+          let v ="hello";<br />
+        </li>
+        <br />
+        <li>
+          let v = "hello"; <br />
+          function fun2() { v = 3; } <br />
+          console.log(v); <br />
+          fun2();<br />
+          console.log(v);<br />
+        </li>
+        <br />
+        <li>
+          program showing block-scoped concept <br />// global variable <br />
+          let m = 'Hello';<br />
+          function fun3() { // local variable let b = 'people';<br />
+          console.log(m+ ' ' + b); <br />
+          if (b == 'World') <br />
+          { let c = 'again'; console.log(m + ' ' + b + ' ' + c); } <br />// c
+          can't be used outside the <br />
+          block console.log(m + ' ' + b + ' ' + c); } <br />
+          fun3();
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
